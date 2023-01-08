@@ -1,0 +1,15 @@
+C:\Users\DamiYBren\source\repos\CursoCoder\bin\Debug\net6.0\CursoCoder.exe
+C:\Users\DamiYBren\source\repos\CursoCoder\bin\Debug\net6.0\CursoCoder.deps.json
+C:\Users\DamiYBren\source\repos\CursoCoder\bin\Debug\net6.0\CursoCoder.runtimeconfig.json
+C:\Users\DamiYBren\source\repos\CursoCoder\bin\Debug\net6.0\CursoCoder.dll
+C:\Users\DamiYBren\source\repos\CursoCoder\bin\Debug\net6.0\CursoCoder.pdb
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.csproj.AssemblyReference.cache
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.AssemblyInfoInputs.cache
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.AssemblyInfo.cs
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.csproj.CoreCompileInputs.cache
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.dll
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\refint\CursoCoder.dll
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.pdb
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\CursoCoder.genruntimeconfig.cache
+C:\Users\DamiYBren\source\repos\CursoCoder\obj\Debug\net6.0\ref\CursoCoder.dll
