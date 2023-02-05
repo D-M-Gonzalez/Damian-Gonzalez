@@ -11,15 +11,14 @@ namespace CursoCoder.Controller
 {
     internal class ProductController
     {
-        public static List<Product> GetProducts(string sCon)
+        public static List<Product> GetProducts()
         {
             List<Product> products = new List<Product>();
+            SqlHandler sqlHandler = new SqlHandler();
             DataSet dsProducts = new DataSet();
+            SqlCommand selectCommand = new SqlCommand("select * from Producto");
 
-            SqlConnection connection = new SqlConnection(sCon);
-            connection.Open();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select * from Producto", connection);
-            sqlDataAdapter.Fill(dsProducts, "DAT");
+            sqlHandler.GetCommand(dsProducts, selectCommand);
 
             if (dsProducts.Tables.Contains("DAT") && dsProducts.Tables["DAT"].Rows.Count > 0)
             {
@@ -39,8 +38,6 @@ namespace CursoCoder.Controller
 
                 }
             }
-
-            connection.Close();
 
             return products;
         }
