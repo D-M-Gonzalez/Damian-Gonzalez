@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using CursoCoder.Helper;
+using CursoCoder.Models;
+using Proyecto1;
 
 namespace CursoCoder.Controller
 {
@@ -14,11 +16,10 @@ namespace CursoCoder.Controller
         public static List<Product> GetProducts()
         {
             List<Product> products = new List<Product>();
-            SqlHandler sqlHandler = new SqlHandler();
             DataSet dsProducts = new DataSet();
             SqlCommand selectCommand = new SqlCommand("select * from Producto");
 
-            sqlHandler.GetCommand(dsProducts, selectCommand);
+            Program.sqlHandler.GetCommand(dsProducts, selectCommand);
 
             if (dsProducts.Tables.Contains("DAT") && dsProducts.Tables["DAT"].Rows.Count > 0)
             {
@@ -45,7 +46,6 @@ namespace CursoCoder.Controller
         public static Product GetProduct(Int32 productId)
         {
             Product product = new Product();
-            SqlHandler sqlHandler = new SqlHandler();
             DataSet dsProduct = new DataSet();
             SqlCommand selectCommand = new SqlCommand("select * from Producto where Id=@productId");
 
@@ -55,7 +55,7 @@ namespace CursoCoder.Controller
             parameter.Value = productId;
 
             selectCommand.Parameters.Add(parameter);
-            sqlHandler.GetCommand(dsProduct, selectCommand);
+            Program.sqlHandler.GetCommand(dsProduct, selectCommand);
 
             if (dsProduct.Tables.Contains("DAT") && dsProduct.Tables["DAT"].Rows.Count > 0)
             {
